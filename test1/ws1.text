@@ -1,0 +1,9 @@
+1. It is a common practice to use the first line of the commit message as a subject line, similar to an email. The rest of the log message is considered the body and used to communicate details of the commit change set.
+
+2. Capitalization and Punctuation: Capitalize the first word and do not end in punctuation. If using Conventional Commits, remember to use all lowercase. Mood: Use imperative mood in the subject line. Also be specific about the updates that's happening
+
+3. Depends on your work, if you're a student probably every 2-3 days
+
+4. I don't think we should commit our binary and obj files and images, log files etc.
+
+
