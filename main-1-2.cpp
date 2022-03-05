@@ -2,9 +2,9 @@
 using namespace std;
 
 int main() {
-    extern double average(double array[], double n);
-    double array[0] = {};
-    cout << average(array, 0) << endl;
+    extern double average(int array[], int n);
+    int array[5] = {10, 11, 16, 13, 7};
+    cout << average(array, 5) << endl;
 
     return 0;
 }
