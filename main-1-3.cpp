@@ -10,4 +10,5 @@ int main() {
                    {0,0,0,9}};
 
     count_numbers(a);
+    cout << endl;
 }
