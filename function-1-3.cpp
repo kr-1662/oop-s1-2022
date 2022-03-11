@@ -89,4 +89,5 @@ void count_numbers(int array[4][4]) {
             cout << i << ":" << num9 << ";";
         }
     }
+    cout << endl;
 }
