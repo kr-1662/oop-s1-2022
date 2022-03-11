@@ -1,4 +1,6 @@
 #include <cmath>
+#include <iostream>
+using namespace std;
 
 int binary_to_number(int binary_digits[], int number_of_digits) {
     int num = 0;
@@ -6,8 +8,7 @@ int binary_to_number(int binary_digits[], int number_of_digits) {
     int power = 0;
 
     for (int i = 0; i < number_of_digits; i++) {
-        number_of_digits -= 1;
-        power = number_of_digits;
+        power = (number_of_digits - 1)-i;
         multiply = pow(2, power);
         num += binary_digits[i] * multiply;
     }

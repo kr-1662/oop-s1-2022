@@ -1,20 +1,24 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-void print_as_binary(string decimal_number) {
-    int size = 0;
-    int div = stoi(string);
-    int num = 0;
-
-    while (div != 0) {
-        num = div % 2;
-        div /= 2;
-        size += 1;
+void print_as_binary(string decimal_num) {
+    int binary[32];
+    int num = stoi(decimal_num);
+    int count = 0;
+    while(num != 1){
+        if(num%2 == 1){
+            binary[count] = 1;
+        }
+        else{
+            binary[count] = 0;
+        }
+        num /= 2;
+        count++;
     }
-
-    for (int i = 0; i = size-1; i--) {
-        cout << num << " ";
+    binary[count] = 1;
+    for(int i = count; i >= 0; i = i -1){
+        cout << binary[i];
     }
-
-    return;
+    cout << endl;
 }
