@@ -1,10 +1,11 @@
 #include <iostream>
 using namespace std;
 
+extern int binary_to_number(int binary_digits[], int number_of_digits);
+
 int main() {
-    extern int binary_to_number(int binary_digits[], int number_of_digits);
+    int a[5] = {0,1,0,0,1};
+    cout << binary_to_number(a, 5) << endl;
 
-    int binary[10] = {1,1,1,1,1,1,1,1,1,1};
-
-    cout << binary_to_number(binary,10) << endl;
+    return 0;
 }

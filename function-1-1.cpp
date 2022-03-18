@@ -1,5 +1,11 @@
-int diagonal(int array[4][4]) {
-    int sum = array[0][0] + array[1][1] + array[2][2] + array[3][3];
+#include <iostream>
+using namespace std;
 
-    return sum;
+void printer(int array[10][10]) {
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < 10; j++) {
+            cout << array[i][j] << " ";
+        }
+        cout << endl;
+    }
 }
