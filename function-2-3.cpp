@@ -36,4 +36,5 @@ int sum_if_a_palindrome(int integers[], int length) {
     if (is_a_palindrome(integers, length) == true) {
         sum = sum_elements(integers, length);
     }
+    return sum;
 }
