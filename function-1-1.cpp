@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+// code
 
 void printer(int array[10][10]) {
     for (int i = 0; i < 10; i++) {

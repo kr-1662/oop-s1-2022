@@ -1,3 +1,4 @@
+// code
 bool is_a_palindrome(int integers[], int length) {
     bool statement = false;
 
@@ -31,8 +32,8 @@ int sum_elements(int integers[], int length) {
 }
 
 int sum_if_a_palindrome(int integers[], int length) {
-    
-    if (is_a_palindrome == true) {
-        sum_elements(integers, length);
+    int sum = 0;
+    if (is_a_palindrome(integers, length) == true) {
+        sum = sum_elements(integers, length);
     }
 }
