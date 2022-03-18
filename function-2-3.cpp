@@ -1,23 +1,29 @@
 bool is_a_palindrome(int integers[], int length) {
-    bool value = false;
+    bool statement = false;
+
     if (length <= 0) {
-        return false;
+        statement = false;
     }
 
-    for (int i = 0, j = length-1; i < length; i++, j--) {
+    for (int i = 0, j = length-1; i < length; i++,j--) {
         if (integers[i] == integers[j]) {
-            value = true;
+            statement = true;
         }
         else {
-            value = false;
+            statement = false;
             break;
         }
     }
-    return value;
+    return statement;
 }
 
 int sum_elements(int integers[], int length) {
     int sum = 0;
+
+    if (length <= 0) {
+        return false;
+    }
+
     for (int i = 0; i < length; i++) {
         sum += integers[i];
     }
@@ -25,10 +31,8 @@ int sum_elements(int integers[], int length) {
 }
 
 int sum_if_a_palindrome(int integers[], int length) {
-    int sum = 0;
-    if (is_a_palindrome(integers, length) == 1) {
-        sum = sum_elements(integers, length);
+    
+    if (is_a_palindrome == true) {
+        sum_elements(integers, length);
     }
-
-    return sum;
 }
