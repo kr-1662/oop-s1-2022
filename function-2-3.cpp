@@ -1,40 +1,12 @@
-// code
-bool is_a_palindrome(int integers[], int length) {
-    bool statement = false;
-
-    if (length <= 0) {
-        statement = false;
-    }
-
-    for (int i = 0, j = length-1; i < length; i++,j--) {
-        if (integers[i] == integers[j]) {
-            statement = true;
-        }
-        else {
-            statement = false;
-            break;
-        }
-    }
-    return statement;
+ 
+// use a function pointer to call the appropriate operator function
+// eg to add       arithmetic_ops(10,2,add_op)
+// eg to subtract  arithmetic_ops(10,2,subtract_op)
+float arithmetic_ops(float left, float right, float (*op)(float,float))
+{
+		return (*op)(left, right);
 }
 
-int sum_elements(int integers[], int length) {
-    int sum = 0;
-
-    if (length <= 0) {
-        return false;
-    }
-
-    for (int i = 0; i < length; i++) {
-        sum += integers[i];
-    }
-    return sum;
-}
-
-int sum_if_a_palindrome(int integers[], int length) {
-    int sum = 0;
-    if (is_a_palindrome(integers, length) == true) {
-        sum = sum_elements(integers, length);
-    }
-    return sum;
+float multiply_op(float left, float right) {
+    return left * right;
 }

@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
-// code
 
-extern void printer(int array[10][10]);
+extern int size_of_variable_star_t();
 
 int main() {
-    int a[10][10] = {0};
+    cout << size_of_variable_star_t() << endl;
+    return 0;
 }
