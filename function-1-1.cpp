@@ -13,7 +13,7 @@ int *readNumbers() {
 }
 
 void printNumbers(int *numbers,int length) {
-    if (length < 0) {
+    if (length <= 0) {
         std::cout << 0;
     }
 
