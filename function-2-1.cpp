@@ -13,13 +13,11 @@ int *readNumbers() {
 }
 
 void printNumbers(int *numbers,int length) {
-    if (length <= 0) {
-        cout << 0;
+    if (length > 0) {
+        for (int i = 0; i < length; i++) {
+            cout << numbers[i];
     }
-
-    for (int i = 0; i < length; i++) {
-        cout << numbers[i];
-    }
+  }
 }
 
 void hexDigits(int *numbers, int length) {
