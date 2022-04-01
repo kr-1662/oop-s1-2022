@@ -7,35 +7,35 @@ string lookup_weekday(int day) {
     int value = 0;
     if (day < 7 && day > 1) {
         if (day == 1) {
-            value = 1;
+            value = 0;
         }
         else if (day == 2) {
-            value = 2;
+            value = 1;
         }
 
         else if (day == 3) {
-            value = 3;
+            value = 2;
         }
 
         else if (day == 4) {
-            value = 4;
+            value = 3;
         }
 
         else if (day == 5) {
-            value = 5;
+            value = 4;
         }
 
         else if (day == 6) {
-            value = 6;
+            value = 5;
         }
 
         else if (day == 7) {
-            value = 7;
+            value = 6;
         }
     }
 
     if (day > 7 || day < 1) {
-        value = 8;
+        value = 7;
     }
 
     return weeks[value];
