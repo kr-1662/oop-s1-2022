@@ -2,7 +2,7 @@
 using namespace std;
 
 string lookup_weekday(int day) {
-    string weeks[7] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+    string weeks[8] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "invalid day"};
     string name;
     int value = 0;
     if (day < 7 || day > 1) {
@@ -33,5 +33,9 @@ string lookup_weekday(int day) {
             value = 7;
         }
     }
+    if (day > 7 || day < 1) {
+        value = 8;
+    }
+
     return weeks[value];
 }
