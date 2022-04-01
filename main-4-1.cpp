@@ -7,7 +7,7 @@ int main() {
     int arr[2][2] = {{40,50},
                      {1,2}};
 
-    cout << min_max(arr, 2, 2) << endl;
+    cout << min_max(**arr, 2, 2) << endl;
 
     return 0;
 }
