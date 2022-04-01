@@ -19,4 +19,5 @@ void display_array(int *vals, int num_vals) {
         cout << vals[i] << " ";
     }
     cout << endl;
+    delete [] vals;
 }
