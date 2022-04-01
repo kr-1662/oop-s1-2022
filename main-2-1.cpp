@@ -11,6 +11,7 @@ int main() {
     cout << lookup_weekday(0) << endl;
     cout << lookup_weekday(10) << endl;
     cout << lookup_weekday(6) << endl;
+    cout << lookup_weekday(7) << endl;
     
 
     return 0;

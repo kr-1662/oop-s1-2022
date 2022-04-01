@@ -5,7 +5,7 @@ string lookup_weekday(int day) {
     string weeks[8] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "invalid day"};
     string name;
     int value = 0;
-    if (day < 7 && day > 1) {
+    if (day >= 1 && day <= 7) {
         if (day == 1) {
             value = 0;
         }
