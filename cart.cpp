@@ -21,7 +21,7 @@ void cart::emptyCart() {
 }
 
 void cart::printMeerkats() {
-    if (num_of_meerkats < 4 && num_of_meerkats >= 0) {
+    if (num_of_meerkats < 4) {
         for (int i = 0; i < num_of_meerkats; i++) {
             cout << m_cart[i].getName() << " " << m_cart[i].getAge() << endl;
         }
@@ -29,5 +29,5 @@ void cart::printMeerkats() {
 
     else {
         cout << "Sorry the cart is full" << endl;
-    }   
+    }
 }
