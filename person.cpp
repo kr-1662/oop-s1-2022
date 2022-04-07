@@ -3,6 +3,9 @@
 
 using namespace std;
 
+person::person() {
+}
+
 person::person(string myName,int Salary) {
     _myName = myName;
     _Salary = Salary;
