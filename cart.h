@@ -4,7 +4,7 @@
 class cart
 {
 private:
-    meerkat m_cart[4];
+    meerkat m_cart[20];
     int num_of_meerkats;
 public:
     cart();                         // create an empty cart object

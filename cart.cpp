@@ -28,4 +28,8 @@ void cart::printMeerkats() {
             cout << m_cart[i].getName() << " " << m_cart[i].getAge() << endl;
         }
     }
+    
+    else {
+        cout << "Sorry the cart is full" << endl;
+    }
 }
