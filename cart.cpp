@@ -7,13 +7,15 @@ cart::cart()
     num_of_meerkats = 0;
 }
 
+bool flag = true;
+
 bool cart::addMeerkat(meerkat cat) {
-    if (num_of_meerkats == 4) {
-        return false;
+    if (num_of_meerkats >= 4) {
+        flag = false;
     }
     m_cart[num_of_meerkats] = cat;
     num_of_meerkats++;
-    return true;
+    return flag;
 }
 
 void cart::emptyCart() {
@@ -21,13 +23,9 @@ void cart::emptyCart() {
 }
 
 void cart::printMeerkats() {
-    if (num_of_meerkats < 4) {
+    if (flag == true) {
         for (int i = 0; i < num_of_meerkats; i++) {
             cout << m_cart[i].getName() << " " << m_cart[i].getAge() << endl;
         }
-    }
-
-    else {
-        cout << "Sorry the cart is full" << endl;
     }
 }

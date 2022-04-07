@@ -4,7 +4,7 @@ using namespace std;
 class meerkat
 {
 private:
-    std::string _meerName;
+    string _meerName;
     int _meerAge;
 public:
     meerkat();
