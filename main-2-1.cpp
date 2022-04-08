@@ -6,20 +6,20 @@ int main() {
     cart c;
     meerkat m, m2, m3, m4, m5;
 
-    m.setName("meerkat1");
+    m.setName("mcat1");
     m.setAge(10);
 
-    m2.setName("meerkat2");
+    m2.setName("mcat2");
     m2.setAge(15);
 
-    m3.setName("meerkat3");
+    m3.setName("mcat3");
     m3.setAge(20);
 
-    m4.setName("meerkat4");
+    m4.setName("mcat4");
     m4.setAge(25);
 
-    m5.setName("meerkat5");
-    m5.setAge(30);
+    m5.setName("mcat5");
+    m5.setAge(9);
 
     c.addMeerkat(m);
     c.addMeerkat(m2);

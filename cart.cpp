@@ -10,7 +10,7 @@ cart::cart()
 bool flag = true;
 
 bool cart::addMeerkat(meerkat cat) {
-    if (num_of_meerkats > 4) {
+    if (num_of_meerkats >= 4) {
         flag = false;
     }
     m_cart[num_of_meerkats] = cat;
@@ -30,6 +30,6 @@ void cart::printMeerkats() {
     }
     
     else {
-        cout << "Sorry the cart is full" << endl;
+        cout << "oops cannot add meerkat: " << m_cart[4].getName() << " of age " << m_cart[4].getAge() << endl;
     }
 }
