@@ -4,10 +4,6 @@
 
 using namespace std;
 
-aircraft::aircraft() {
-    
-}
-
 aircraft::aircraft(string callsign,person thePilot,person theCoPilot) {
     _callsign = callsign;
     _Pilot = thePilot;
