@@ -1,3 +1,6 @@
+#ifndef person_H
+#define person_H
+
 #include <string>
 using namespace std;
 
@@ -14,3 +17,5 @@ public:
     void setSalary(int mySalary);     // change the person's salary
     int getSalary();
 };
+
+#endif

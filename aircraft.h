@@ -1,3 +1,6 @@
+#ifndef aircraft_H
+#define aircraft_H
+
 #include <string>
 #include "person.h"
 using namespace std;
@@ -18,3 +21,5 @@ public:
     void printDetails();                 // print the callsign, a new line, the pilot name,
                                         // a new line, the co-pilot name and a final newline.
 };
+
+#endif

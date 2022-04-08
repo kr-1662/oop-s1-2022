@@ -1,3 +1,6 @@
+#ifndef cart_H
+#define cart_H
+
 #include <string>
 #include "meerkat.h"
 
@@ -13,3 +16,5 @@ public:
     void printMeerkats();           // print the name, a space, the age, then a new line
                                     // for each meerkat in the order they were added
 };
+
+#endif
