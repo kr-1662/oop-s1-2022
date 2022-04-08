@@ -6,9 +6,9 @@ using namespace std;
 int main() {
     person p1, p2, p3;
 
-    p1.setName("sfdsfds");
-    p2.setName("tytrrrte");
-    p3.setName("dsfdsfsd");
+    p1.setName("James1");
+    p2.setName("James2");
+    p3.setName("James3");
 
     p1.setSalary(442421);
     p2.setSalary(423423);
