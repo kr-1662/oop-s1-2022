@@ -4,6 +4,8 @@
 using namespace std;
 
 person::person() {
+    _myName = "";
+    _Salary = 0;
 }
 
 person::person(string myName,int Salary) {
