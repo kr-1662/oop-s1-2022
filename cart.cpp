@@ -10,12 +10,13 @@ cart::cart()
 bool flag = true;
 
 bool cart::addMeerkat(meerkat cat) {
-    if (num_of_meerkats > 4) {
+    if (num_of_meerkats >= 4) {
         flag = false;
+        return flag;
     }
     m_cart[num_of_meerkats] = cat;
     num_of_meerkats++;
-    return flag;
+    return true;
 }
 
 void cart::emptyCart() {
