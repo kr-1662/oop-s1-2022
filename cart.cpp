@@ -29,7 +29,10 @@ void cart::printMeerkats() {
         }
     }
     
-    else {
+    if (flag == false) {
+        for (int i = 0; i < num_of_meerkats; i++) {
+            cout << m_cart[i].getName() << " " << m_cart[i].getAge() << endl;
+        }
         cout << "oops cannot add meerkat: " << m_cart[4].getName() << " of age " << m_cart[4].getAge() << endl;
     }
 }
