@@ -4,15 +4,9 @@
 using namespace std;
 
 int main() {
-    person p1, p2, p3;
-
-    p1.setName("James1");
-    p2.setName("James2");
-    p3.setName("James3");
-
-    p1.setSalary(442421);
-    p2.setSalary(423423);
-    p3.setSalary(11451);
+    person p1("James1", 234521);
+    person p2("James2", 89211);
+    person p3("James3", 904101);
 
     aircraft a("Mayday", p1, p2);
 
