@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     cart c;
-    meerkat m, m2, m3, m4, m5;
+    meerkat m, m2, m3, m4, m5, m6;
 
     m.setName("mcat1");
     m.setAge(10);
@@ -20,6 +20,9 @@ int main() {
 
     m5.setName("mcat5");
     m5.setAge(9);
+
+    m6.setName("mcat6");
+    m6.setAge(16);
 
     c.addMeerkat(m);
     c.addMeerkat(m2);
