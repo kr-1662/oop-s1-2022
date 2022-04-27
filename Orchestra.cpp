@@ -3,35 +3,46 @@
 Orchestra::Orchestra()
 {
     _size = 0;
+    _current_num_members = 0;
+    arr = new Musician[_size];
 }
 
 Orchestra::Orchestra(int size) {
     _size = size;
+    _current_num_members = 0;
+    arr = new Musician[_size];
 }
-
-bool Orchestra::has_instrument(std::string instrument) {
-
-}
-
-Musician * Orchestra::get_members() {
-
-}
-
-int i = 0;
 
 bool Orchestra::add_musician(Musician new_musician) {
-    _new_musician = new_musician;
-    if (i < _size) {
-        arr[i] = new_musician;
-        i++;
+    if (_current_num_members < _size) {
+        arr[_current_num_members] = new_musician;
+        _current_num_members++;
+        return true;
+    }
+    else{
+        return false;
     }
 }
 
 int Orchestra::get_current_number_of_members() {
-    int num = 0;
-    for (int i = 0; i < _size; i++) {
-        if ()
+    return _current_num_members;
+}
+
+bool Orchestra::has_instrument(std::string instrument) {
+    bool flag;
+    for (int j = 0; j < _current_num_members; j++) {
+        if (arr[j].get_instrument() == instrument) {
+            flag = true;
+        }
+        else {
+            flag = false;
+        }
     }
+    return flag;
+}
+
+Musician * Orchestra::get_members() {
+    return arr;
 }
 
 Orchestra::~Orchestra()

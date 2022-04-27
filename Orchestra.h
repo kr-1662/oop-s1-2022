@@ -5,8 +5,9 @@ class Orchestra
 {
 private:
     int _size;
+    int _current_num_members;
     Musician _new_musician;
-    Musician *arr = new Musician[_size];
+    Musician *arr;
 public:
     Orchestra();
     Orchestra(int size);
