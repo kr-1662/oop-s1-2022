@@ -1,3 +1,6 @@
+#ifndef MUSICIAN_H
+#define MUSICIAN_H
+
 #include <string>
 
 class Musician
@@ -12,3 +15,5 @@ public:
     int get_experience();
     ~Musician();
 };
+
+#endif

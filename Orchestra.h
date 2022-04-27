@@ -1,3 +1,6 @@
+#ifndef ORCHESTRA_H
+#define ORCHESTRA_H
+
 #include <string>
 #include "Musician.h"
 
@@ -18,3 +21,4 @@ public:
     ~Orchestra();
 };
 
+#endif
