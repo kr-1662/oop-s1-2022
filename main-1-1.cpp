@@ -1,14 +1,13 @@
 #include <iostream>
-#include <string>
-#include "Musician.h"
+#include "House.h"
 
 using namespace std;
 
 int main() {
-    Musician m;
+    House h(5, "James");
 
-    cout << m.get_instrument() << endl;
-    cout << m.get_experience() << endl;
+    cout << h.get_lot_number() << endl;
+    cout << h.get_name() << endl;
 
     return 0;
 }
