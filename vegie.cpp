@@ -18,9 +18,14 @@ string vegie:: get_name()
     return name;
 }
 
-void vegie:: get_favourite_food()
+string vegie:: get_favourite_food()
 {
-    cout <<  favourite_food;
+    return favourite_food;
+}
+
+void vegie:: set_favourite_food(string f)
+{
+    favourite_food = f;
 }
 
 
