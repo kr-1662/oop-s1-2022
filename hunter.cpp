@@ -3,19 +3,13 @@
 
 using namespace std;
 
-int counter = 0;
+int hunter::nextID = 1000;
 
 hunter::hunter(string n, int v): animal(n, v) {
     name = n;
     volume = v;
     kills = 0;
-    if (counter == 0) {
-        nextID = 1000;
-        counter++;
-    }
-    else {
-        nextID++;
-    }
+    nextID++;
 }
 
 int hunter:: get_kills() {
