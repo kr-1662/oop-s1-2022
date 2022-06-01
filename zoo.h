@@ -16,9 +16,9 @@ private:
 public:
     zoo(string n,int cows,int lions);      // create a zoo with the given number of cows and lions
     string get_name();                      // returns the zoo's name
-    void get_number_of_animals();         // returns the zoo's number of animals
+    int get_number_of_animals();         // returns the zoo's number of animals
     animal **animals;                      // the zoo's animals
-    void get_animals();                   // returns the zoo's animals
+    animal** get_animals();                   // returns the zoo's animals
 };
 
 #endif

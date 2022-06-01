@@ -21,13 +21,10 @@ string zoo:: get_name() {
     cout << "Zoo: " << name;
 }
 
-void zoo:: get_number_of_animals() {
-    cout << number_of_animals;
+int zoo:: get_number_of_animals() {
+    return number_of_animals;
 }
 
-void zoo:: get_animals() {
-    for (int i = 0; i < number_of_animals; i++) {
-        animals[i]->get_name();
-        cout << endl;
-    }
+animal** zoo:: get_animals() {
+    return animals;
 }
