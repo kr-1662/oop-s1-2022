@@ -22,7 +22,7 @@ int hunter:: get_kills() {
     return kills;
 }
 
-int hunter::set_kills(int k) {
+void hunter::set_kills(int k) {
     kills = k;
 }
 
