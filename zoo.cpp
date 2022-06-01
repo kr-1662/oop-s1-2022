@@ -4,7 +4,6 @@
 using namespace std;
 
 zoo:: zoo(string n,int cows,int lions) {
-    name = n;
     number_of_animals = cows + lions;
     animals = new animal*[number_of_animals];
     for (int i = 0; i < number_of_animals; i++) {
