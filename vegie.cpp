@@ -3,20 +3,13 @@
 
 using namespace std;
 
-int counter2 = 0;
+int vegie:: nextID = 100;
 
 vegie:: vegie(string n,int v): animal(n,v)
 {
-    name = n;
-    volume = v;
     favourite_food = "grass";
-    if (counter2 == 0) {
-        nextID = 100;
-        counter2++;
-    }
-    else {
-        nextID++;
-    }
+    animalID = nextID;
+    nextID++;
 }
 
 string vegie:: get_name()
