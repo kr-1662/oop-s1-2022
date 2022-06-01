@@ -18,7 +18,7 @@ zoo:: zoo(string n,int cows,int lions) {
 }
 
 string zoo:: get_name() {
-    cout << "Zoo: " << name;
+    return "Zoo: " + name;
 }
 
 int zoo:: get_number_of_animals() {
