@@ -16,7 +16,6 @@ public:
     string get_name();           // returns the vegie's name
     string get_favourite_food();  // returns the vegie's favourite food
     void set_favourite_food(string f);  // sets the vegie's favourite food to f
-    ~vegie();
 };
 
 #endif
