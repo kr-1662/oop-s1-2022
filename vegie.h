@@ -14,7 +14,7 @@ private:
 public:
     vegie(string n,int v);      // create a vegie with name n and body volume v
     string get_name();           // returns the vegie's name
-    void get_favorite_food();  // returns the vegie's favourite food
+    void get_favourite_food();  // returns the vegie's favourite food
     ~vegie();
 };
 

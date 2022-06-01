@@ -18,7 +18,7 @@ string vegie:: get_name()
     return name;
 }
 
-void vegie:: get_favorite_food()
+void vegie:: get_favourite_food()
 {
     cout <<  favourite_food;
 }
