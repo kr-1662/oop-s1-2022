@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "animal.h"
+#include "hunter.h"
 
 using namespace std;
 

@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
-#include "animal.h"
+#include "sort_by_animalID.h"
+#include "hunter.h"
+#include "vegie.h"
 
 using namespace std;
 
