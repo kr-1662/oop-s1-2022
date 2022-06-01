@@ -19,7 +19,6 @@ public:
     void get_number_of_animals();         // returns the zoo's number of animals
     animal **animals;                      // the zoo's animals
     void get_animals();                   // returns the zoo's animals
-    ~zoo();
 };
 
 #endif

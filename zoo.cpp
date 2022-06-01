@@ -31,10 +31,3 @@ void zoo:: get_animals() {
         cout << endl;
     }
 }
-
-zoo:: ~zoo() {
-    for (int i = 0; i < number_of_animals; i++) {
-        delete animals[i];
-    }
-    delete [] animals;
-}
