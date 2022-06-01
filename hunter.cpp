@@ -22,6 +22,10 @@ int hunter:: get_kills() {
     return kills;
 }
 
+int hunter::set_kills(int k) {
+    kills = k;
+}
+
 string hunter:: get_name() {
     cout << "Hunter: ";
     return name;
