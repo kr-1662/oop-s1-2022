@@ -9,9 +9,7 @@ using namespace std;
 int main() {
     Consignment c;
 
-    for (int i = 0; i < 5; i++) {
-        cout << c.get_cargo()[i]->get_transport() << endl;
-    }
+
     
     return 0;
 }
