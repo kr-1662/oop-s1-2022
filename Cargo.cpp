@@ -12,11 +12,11 @@ Cargo::Cargo(string t, string m, int u) {
     }
 }
 
-void Cargo::set_cargotype(string new_t) {
+void Cargo::set_cargoType(string new_t) {
     cargoType = new_t;
 }
 
-string Cargo::get_cargotype() {
+string Cargo::get_cargoType() {
     return cargoType;
 }
 

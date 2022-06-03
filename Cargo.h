@@ -14,8 +14,8 @@ protected:
 public:
     Cargo();
     Cargo(string t, string m, int u);   // creates a Cargo type t, transport mechanism m, and number of units u
-    void set_cargotype(string new_t);
-    string get_cargotype();
+    void set_cargoType(string new_t);
+    string get_cargoType();
     void set_transport(string new_m);
     string get_transport();
     void set_units(int new_u); 
