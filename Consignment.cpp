@@ -5,11 +5,11 @@ Consignment::Consignment()
     csc = new Cargo * [5];
     for (int i = 0; i < 5; i++) {
         if (i == 0 || i == 4) {
-            csc[i] = new Fruit("Train", 1000);
+            csc[i] = new Fruit();
         }
 
         else {
-            csc[i] = new FoodPackage("Automobile", 600);
+            csc[i] = new FoodPackage();
         }
     }
 }
